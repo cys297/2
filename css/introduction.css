@@ -1,0 +1,69 @@
+body {
+  background-color: #66CCFF;
+  line-height: 1;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table, tbody, th, td {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#bao{
+  height: 90px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#introduction {
+  width: 100%;
+  margin: 0 auto;
+}
+.cont {
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+.cont .title {
+  height: 32px;
+  font-size: 24px;
+  text-shadow: -3px 3px 3px #ebcb90;
+}
+
+.information {
+  width: 777px;
+  /* 凝胶布局，固定宽度，使内容居中，自动调节左右margin的距离 */
+  margin: 0 auto;
+  color: #000;
+  /* 防止字符串太长而找不到它的自然断句点时产生溢出 */
+  word-wrap: break-word;
+  text-align: center;
+}
+.information .inner {
+  position: relative;
+  background-color: #fffafae5;
+  margin-bottom: 28px;
+  padding: 10px;
+  /* 设置边框样式，脊线更加立体 */
+  border: 3px solid gray;
+}
+/* 设置奇数列css */
+td:nth-child(odd) {
+  background-color: #ecf5fc;
+  height: 32px;
+  padding: 5px;
+  line-height: 24px;
+  border: 1px solid #c9c8c8;
+}
+/* 设置偶数列css */
+td:nth-child(even) {
+  background-color: #fff;
+  width: 140px;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 24px;
+  border: 1px solid #c9c8c8;
+}

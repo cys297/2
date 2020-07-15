@@ -1,0 +1,23 @@
+#bao{
+  height: 90px;
+}
+
+.both{
+	float: left;
+}
+
+.tu{
+  padding: 30px, 50px;
+  float: left;
+}
+
+.wen{
+  padding-top: 80px;
+  font-size: 15px;
+  float: left;
+  text-align: left;
+  line-height: 1.2;
+  font-family: FangSong;
+}
+
+
