@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>站长简历</title>
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+  <link rel="stylesheet" type="text/css" href="../css/m&f.css">
+</head>
+
+<body>
+   <div id="bao" class="both">
+    <div class="navigation">
+        <ul>
+          <li class="">
+            <a href="../index.html" title="主页">主页</a>
+          </li>
+          <li class="">
+            <a href="../html/introduction.html" title="站长简介">站长简介</a>
+          </li>
+          <li class="">
+            <a href="../html/animation recommendation.html" title="动漫推荐">动漫推荐</a>
+          </li>
+          <li class="current">
+            <a href="../html/m&f.html" title="留言与反馈">留言与反馈</a>
+          </li>
+          <li class="">
+            <a href="https://www.bilibili.com/" title="bilibili">
+              <img src="../images/bilibili.png" height="35px" width="40px">
+            </a>
+          </li>
+        </ul><div></div>
+    </div>
+   </div>
+       <div class="content">
+      <section class="content_top">
+        <div class="content_top-inner">
+
+
+            <div class="foreword">
+              <span class="text">
+                <p>大家好！欢迎光临我的不知名驿站，为了更好完善网页，希望您能为我留下宝贵意见</p>
+                <p>下面可能耽误您几分钟搜集信息，衷心感谢您的配合 ~</p>
+              </span>
+            </div>
+
+
+          <form id="survey" name="survey" method="post">
+            <div class="tableRow">
+              <p class="row-title">网站反馈</p>
+            </div>
+
+            <div class="tableRow">
+              <p>哪些页面需要改进？</p>
+              <p>
+                <input class="choice" type="checkbox" name="choice[]" value="index">主页
+                <br><br>
+                <input class="choice" type="checkbox" name="choice[]" value="introduction">站长简介
+                <br><br>
+                <input class="choice" type="checkbox" name="choice[]" value="animation recommendation">动漫推荐
+                <br><br>
+                <input class="choice" type="checkbox" name="choice[]" value="m&f">留言与反馈
+              </p>
+              <p>页面建议或意见<span>*</span></p>
+              <p>
+                <textarea class="text-field form-textarea" name="suggestion"></textarea>
+              </p>
+            </div>
+            <br>
+            <div class="tableRow">
+              <p></p>
+              <p class="buttons">
+                <input class="reset_btn" type="reset" name="reset_btn" value="重 置">
+              </p>
+              <p class="buttons">
+                <input class="submit_btn" type="submit" name="submit_btn" value="提 交">
+              </p>
+              <p></p>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="content_bottom">
+        <div class="content_bottom-inner">
+
+          <header class="content-header">
+            <div class="title">
+
+              <div class="word">
+                <h1>留言区</h1>
+              </div>
+            </div>
+          </header>
+
+          <form id="message" name="message" method="post">
+
+            <div class="tableRow">
+              <p>
+                <textarea class="write" name="message" placeholder=" 简单说上两句......"></textarea>
+              </p>
+            </div>
+            <div class="tableRow">
+              <p></p>
+              <p class="say">
+                <input class="say_btn" type="submit" name="say_btn" value="畅言一下">
+              </p>
+            </div>
+          </form>
+        </div>
+     </section>
+
+    </div>
+  </body>
+</html>
