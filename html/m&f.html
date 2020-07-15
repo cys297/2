@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>站长简历</title>
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+  <link rel="stylesheet" type="text/css" href="../css/m&f.css">
+</head>
+
+<body>
+   <div id="bao" class="both">
+    <div class="navigation">
+        <ul>
+          <li class="">
+            <a href="../index.html" title="主页">主页</a>
+          </li>
+          <li class="">
+            <a href="../html/introduction.html" title="站长简介">站长简介</a>
+          </li>
+          <li class="">
+            <a href="../html/animation recommendation.html" title="动漫推荐">动漫推荐</a>
+          </li>
+          <li class="current">
+            <a href="../html/m&f.html" title="留言与反馈">留言与反馈</a>
+          </li>
+          <li class="">
+            <a href="https://www.bilibili.com/" title="bilibili">
+              <img src="../images/bilibili.png" height="35px" width="40px">
+            </a>
+          </li>
+        </ul><div></div>
+    </div>
+   </div>
+       <div class="content">
+      <section class="content_top">
+        <div class="content_top-inner">
+
+          <div class="content-header">
+            <div class="foreword">
+              <span class="text">
+                <p>大家好！欢迎光临我的不知名驿站，为了更好完善网页，希望您能为我留下宝贵意见</p>
+                <p>下面可能耽误您几分钟搜集信息，衷心感谢您的配合 ~</p>
+              </span>
+            </div>
+          </div>
+
+          <form id="survey" name="survey" action="feedback.php" method="post">
+
+            <div class="tableRow">
+              <!-- 表格的每一行分成四列，都放在p容器中，每一标题列都会有一个公共类row-title -->
+              <p class="row-title">基本信息</p>
+            </div>
+            <br>
+            <div class="tableRow">
+              <p>Your Name<span>*</span>:</p>
+              <p>
+                <input type="text" class="text-field" data-type="input-textbox" name="name" placeholder="请输入您的姓名*">
+              </p>
+              <p>choice: </p>
+              <p>
+                <input class="choice" type="radio" name="choice" value="male">男
+                <input class="choice" type="radio" name="choice" value="female">女
+              </p>
+            </div>
+            <div class="tableRow">
+              <p>Q Q：</p>
+              <p>
+                <input class="text-field" type="text" data-type="input-textbox" name="emailconfirm"
+                  placeholder=" 请填写您的QQ">
+              </p>
+              <p>Wechat：</p>
+              <p>
+                <input class="text-field" type="text" data-type="input-textbox" name="emailconfirm"
+                  placeholder=" 请填写您的微信号">
+              </p>
+            </div>
+            <div class="tableRow">
+              <p>Telephone Number:</p>
+              <p>
+                <input class="text-field" type="text" data-type="input-textbox" name="phone" placeholder=" 请输入您的电话号码">
+              </p>
+              <p>Email Address<span>*</span>:</p>
+              <p>
+                <input class="text-field" type="text" data-type="input-textbox" name="email" placeholder=" 请填写邮箱地址*">
+              </p>
+            </div>
+
+            <div class="tableRow">
+              <p class="row-title">网站反馈</p>
+
+            </div>
+            <br>
+
+            <div class="tableRow">
+              <p>哪些页面需要改进？</p>
+              <p>
+                <input class="choice" type="checkbox" name="choice[]" value="index">主页
+                <br><br>
+                <input class="choice" type="checkbox" name="choice[]" value="introduction">站长简介
+                <br><br>
+                <input class="choice" type="checkbox" name="choice[]" value="animation recommendation">动漫推荐
+                <br><br>
+                <input class="choice" type="checkbox" name="choice[]" value="m&f">留言与反馈
+              </p>
+              <p>页面建议或意见<span>*</span></p>
+              <p>
+                <textarea class="text-field form-textarea" name="suggestion"></textarea>
+              </p>
+            </div>
+            <br>
+            <div class="tableRow">
+              <p></p>
+              <p class="buttons">
+                <input class="reset_btn" type="reset" name="reset_btn" value="重 置">
+              </p>
+              <p class="buttons">
+                <input class="submit_btn" type="submit" name="submit_btn" value="提 交">
+              </p>
+              <p></p>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="content_bottom">
+        <div class="content_bottom-inner">
+
+          <header class="content-header">
+            <div class="title">
+
+              <div class="word">
+                <h1>留言区</h1>
+              </div>
+            </div>
+          </header>
+
+          <form id="message" name="message" action="feedback.php" method="post">
+
+            <div class="tableRow">
+              <p>
+                <textarea class="write" name="message" placeholder=" 简单说上两句......"></textarea>
+              </p>
+            </div>
+            <div class="tableRow">
+              <p></p>
+              <p class="say">
+                <input class="say_btn" type="submit" name="say_btn" value="畅言一下">
+              </p>
+            </div>
+          </form>
+        </div>
+     </section>
+
+    </div>
+  </body>
+</html>
